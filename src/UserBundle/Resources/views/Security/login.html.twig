@@ -26,10 +26,16 @@
                         </div>
                     </div>
 
-                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-                    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                    <div class="col m4">
+                        <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                    </div>
 
-                    <input class="waves-effect waves-light btn" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                    <div class="col m8">
+                        <input class="waves-effect waves-light btn" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                    </div>
+
+
                 </form>
             </div>
     </div>
