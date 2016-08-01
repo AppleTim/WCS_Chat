@@ -1,0 +1,6 @@
+/***** NAV BAR CUSTOM *****/
+.nav_top a:first-child, .nav_top a:first-child img{
+    height: 90%;
+    margin-left: 5px;
+    margin-top: 3px;
+}

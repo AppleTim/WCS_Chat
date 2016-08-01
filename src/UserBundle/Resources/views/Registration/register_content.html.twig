@@ -65,19 +65,27 @@
                     </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        {{ form_label(form.plainPassword) }}
-                        {{ form_widget(form.plainPassword) }}
-                        {{ form_errors(form.plainPassword) }}
+                        {{ form_label(form.plainPassword.children.first) }}
+                        {{ form_widget(form.plainPassword.children.first) }}
+                        {{ form_errors(form.plainPassword.children.first) }}
                     </div>
                 </div>
-                 <div>
-                     <input class="waves-effect waves-light btn" type="submit" value="{{ 'registration.submit'|trans }}" />
+                <div class="row">
+                    <div class="input-field col s12">
+                        {{ form_label(form.plainPassword.children.second) }}
+                        {{ form_widget(form.plainPassword.children.second) }}
+                        {{ form_errors(form.plainPassword.children.second) }}
+                    </div>
+                </div>
+                <div>
+                    <input class="waves-effect waves-light btn" type="submit" value="{{ 'registration.submit'|trans }}" />
                 </div>
             </div>
         </div>
     </div>
 
-        {{ form_end(form) }}
+
+
 
 
 

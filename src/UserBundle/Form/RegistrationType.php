@@ -32,7 +32,7 @@ class RegistrationType extends AbstractType
             ->add('date_naissance', DateType::class, array(
                 'widget' => 'single_text',
                 'attr' => ['class' => 'datepicker'],
-                'format' =>'dd-MM-yyyy',))
+                'format' =>'dd-MM-7yyyy',))
             ->add('github', 'text', array(
                 'required' => false))
             ;
